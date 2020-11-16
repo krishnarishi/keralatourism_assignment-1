@@ -1,0 +1,59 @@
+.district-container{
+    margin:20px;
+}
+body{
+    background: url("../imagess/bg5.jpg");
+    background-size: cover;
+    
+} 
+.district-title{
+    font-size: 25px;
+    padding-left: 20px;
+    color: #ffffff;
+
+}
+.district-content{
+    font-size: 12px;
+    padding: 15px;
+    color: #ffffff;
+}
+.district-details-section {
+    box-shadow: 1px 3px 5px 3px #888888;
+    width: 250px;
+    cursor: pointer;
+    background-color: white;
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 300px;
+}
+.district-details-section:hover {
+    box-shadow: 1px 3px 15px 3px #ffffff;
+}
+.district-details-container {
+    display: flex;
+    margin: 30px;
+}
+/* .district-details-section:first-child  {
+    margin-left: 50px;
+} */
+.district-details-image img {
+    
+    width: 350px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.district-details-name{
+    color: rgb(30, 179, 238);
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 250px;
+    padding: 0 80px;
+    text-align: center;
+    padding-top: 25px;
+    width: 364;
+    padding-left: 127px;
+}
+.district-details-name:hover {
+    font-size: 20px;
+}

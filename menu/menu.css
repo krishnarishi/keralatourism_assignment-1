@@ -1,0 +1,16 @@
+.style{
+ padding: 0 15px;
+ position: relative;
+ display: inline-block;
+ max-width: 100%;
+ box-sizing: border-box;
+}
+.menu-section {
+    padding: unset !important;
+}
+.custom-nav{
+    background-color: #5cb503 !important /* #8ed6ee !important */
+}
+body {
+    background-color: #5cb503 !important;
+}

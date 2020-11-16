@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>signup</title>
+      <link rel="stylesheet" href="./css/signup.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <body>
+      <iframe src="../menu/menu.html" style="width:100%; height: 52px; border: none;"></iframe>
+      <div class="signup-container">
+         <span class="signup-titile">Sign Up</span> 
+         <div class="signup-form">
+            <form action="login.html" novalidate="novalidate" onsubmit="return validateForm()">
+               <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                     <label for="validationDefault01">First name</label>
+                     <input type="text" class="form-control" id="validationDefault01" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                     <label for="validationDefault02">Last name</label>
+                     <input type="text" class="form-control" id="validationDefault02" required>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="col-md-10 mb-3">
+                     <label for="validationDefault03">E-mail</label>
+                     <input type="text" class="form-control" id="email" required style="width: 335px;">
+                     <label for = "emailError" id="emailError"></label>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <div class="col-md-10 mb-3">
+                     <label for="validationDefault03">Password</label>
+                     <input type="password" class="form-control" id="password" required style="width: 335px;" onkeyup="validatePasswordStrength()">
+                  </div>
+                  <label for = "passwordError" id="passwordError"></label>
+                  <div class="indicator">
+                     <span class="weak" id="weak"></span>
+                     <span class="fair" id="fair"></span>
+                     <span class="good" id="good"></span>
+                     <span class="strong" id="strong"></span>
+                  </div>
+                  <div class="text" id="passwordStrength"></div>
+               </div>
+               <div class="form-group">
+                <div class="col-md-10 mb-3">
+                   <label for="validationDefault03">Phone number</label>
+                   <input type="phone no." class="form-control" id="phonenum" required style="width: 335px;" onsubmit="validatePhoneNumber">
+                   <label for = "phonenumError" id="phonenumError"></label>
+                </div>
+               <!-- <div class="form-group">
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required> 
+                     <label class="form-check-label" for="invalidCheck2" style="width: 100px;">
+                     Agree to terms and conditions
+                     </label>
+                  </div>
+               </div> -->
+               <button class="btn btn-primary" type="submit"  style="background-color: green;">Submit form</button>
+            </form>
+         </div>
+      </div>
+      <script src="signup.js"></script>
+   </body>
+</html>
+
