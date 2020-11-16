@@ -28,7 +28,7 @@
         let regexp = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
         // console.log(regexp.test(password.value));
         if (regexp.test(password.value)) {
-            passwordError.innerHTML = "valid";
+            passwordError.innerHTML = "Valid password";
             passwordError.style.color = "green";
             return true;
         } else if (password.value == 0){
@@ -48,7 +48,7 @@
         let regexp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
         console.log(regexp.test(phonenum.value));
         if(regexp.test(phonenum.value)){
-            phonenumError.innerHTML = "valid";
+            phonenumError.innerHTML = "Valid Phone Number ";
             phonenumError.style.color = "green";
             return true;
         } else if (phonenum.value == 0){
@@ -56,7 +56,7 @@
             phonenumError.style.color = "red";
             return false;
         } else {
-            phonenumError.innerHTML = "Invalid phonenumber";
+            phonenumError.innerHTML = "Invalid Phone Number";
             phonenumError.style.color = "red";
             return false;
         }
